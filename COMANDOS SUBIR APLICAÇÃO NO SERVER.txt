@@ -1,0 +1,15 @@
+Gerar war no IntelliJ
+-Fazer maven clean package e ir até a pasta /target e pegar o war para jogar na pasta C:\apache-tomcat-6.0.44\webapps
+-Rodar o arquivo batch "C:\apache-tomcat-6.0.44\bin\startup.bat"
+Obs: Para mudar a porta no tomcat basta ir: /apache-tomcat-9.0.115/conf/server.xml
+
+Gerar Build no Angular
+Obs: Tem que ter o Node.js instalado para executar os comandos no CMD.
+Abrir o CMD e vá até a pasta raiz do projeto do Front (D:\Projetos\OUTROS\Projeto Prefeitura Barreirinhas\Desenvolvimento\app-manter-sct-front\ProdutosFront) e execute o comando: ng build --configuration=production
+Obs: Caso a execução do index.html não funcione, tem que instalar o http-server. Execute o comando no CMD:
+npm install --global http-server
+Entre na pasta do projeto dentro do dist:
+...\Desenvolvimento\app-manter-sct-front\ProdutosFront\dist\produtos-front>
+Execute:
+http-server
+Vai ser mostrado o enderelo para ser usado no browser. Exemplo: http://127.0.0.1:8080. Ao colar no browser colocar assim: http://127.0.0.1:8080/index
